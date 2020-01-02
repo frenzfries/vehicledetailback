@@ -77,9 +77,9 @@ class EnquiryController extends Controller
      */
     public function show($id)
     {
-        $employee = Employee::find($id);
+        $enquiry = Enquiry::find($id);
 
-        if(is_null($employee)){
+        if(is_null($enquiry)){
             return response()->json([
                 'error' => true,
                 'message'  => "Record with id # $id not found",
@@ -102,7 +102,7 @@ class EnquiryController extends Controller
     public function update(Request $request, $id)
     {
         if ($id != null) {
-            Customer::where('id', $id)->update($request->all());  
+            Enquiry::where('id', $id)->update($request->all());  
         }
     }
 
@@ -115,7 +115,7 @@ class EnquiryController extends Controller
     public function destroy($id)
     {
         if ($id != null) {
-            $product = Customer::find($id);
+            $product = Enquiry::find($id);
             $product->delete();    
         }
     }

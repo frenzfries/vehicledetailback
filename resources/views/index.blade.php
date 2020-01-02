@@ -19,19 +19,19 @@
                 </thead>
                 <tbody>
                     <tr>
-                    <!-- @foreach ($enquiries as $enquiry)
+                    @foreach ($enquiries as $enquiry)
                         <td>{{ $enquiry->vehicle }}</td>
                         <td>{{ $enquiry->customer_name }}</td>
                         <td>{{ $enquiry->sales_person }}</td>
                         <td>{{ $enquiry->date_timestamp_get }}</td>
                         <td>{{ $enquiry->enquiry_type }}</td>
-                        <td>{{ $enquiry->enquiry_status }}</td> -->
-                        <!-- <td>{{ $enquiry->enquiry_source }}</td> -->
+                        <td>{{ $enquiry->enquiry_status }}</td>
+                        <td>{{ $enquiry->enquiry_source }}</td>
                         <td>
                             <button class="btn btn-danger">Delete</button>
                             <button class="btn btn-primary">Edit</button>
                         </td>
-                    <!-- @endforeach -->
+                    @endforeach
                     </tr>
                 </tbody>
             </table>

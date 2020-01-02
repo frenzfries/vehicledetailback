@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
+Route::get('/enquiry', 'HomeController@show');
 // Route::get('/enquiry', function() {
 //     return view('enquiry');
 // });
